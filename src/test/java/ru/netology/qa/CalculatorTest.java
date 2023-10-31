@@ -37,7 +37,7 @@ public class CalculatorTest {
         } else {
             throw new IllegalArgumentException(String.format("Platform %s no supported", platform));
         }
-        driver = new AppiumDriver(new URL("http://127.0.0.1:4723/wd/hub"), desiredCapabilities);
+        driver = new AppiumDriver(new URL("http://127.0.0.1:4723/"), desiredCapabilities);
     }
 
     @Test
